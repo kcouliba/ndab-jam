@@ -20,4 +20,8 @@ export default class Project extends AStats {
     this.green = this.green < 0 ? 0 : this.green
     this.blue = this.blue < 0 ? 0 : this.blue
   }
+
+  get isActive() {
+    return this.red + this.green + this.blue > 0
+  }
 }

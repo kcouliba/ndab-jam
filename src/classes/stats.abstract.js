@@ -6,10 +6,6 @@ const validator = Joi.object({
 })
 
 export default class AStats {
-  red
-  green
-  blue
-
   constructor(options = {}) {
     const { min = 0, max = 5 } = options
     const { error } = validator.validate(options, {})

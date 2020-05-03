@@ -31,4 +31,19 @@ describe('description', () => {
       blue: 2,
     })
   })
+
+  test('should be active if stats sum is greater than 0', () => {
+    const project = new Project()
+
+    expect(project.isActive).toBeTruthy()
+  })
+
+  test('should not be active if stats sum is lesser than or equal 0', () => {
+    const project = new Project()
+
+    project.red = 0
+    project.green = 0
+    project.blue = 0
+    expect(project.isActive).toBeFalsy()
+  })
 })
