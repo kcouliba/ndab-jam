@@ -1,12 +1,13 @@
-import Project, { DEFAULT_STATS } from '../src/classes/project.class'
+import Project from '../src/classes/project.class'
+import { PROJECT_DEFAULT_STATS } from '../src/constants'
 
 describe('description', () => {
   test('should be defined', () => {
     expect(Project).toBeDefined()
   })
 
-  test(`should be defined between ${DEFAULT_STATS.min} and ${DEFAULT_STATS.max} by default`, () => {
-    const { min, max } = DEFAULT_STATS
+  test(`should be defined between ${PROJECT_DEFAULT_STATS.min} and ${PROJECT_DEFAULT_STATS.max} by default`, () => {
+    const { min, max } = PROJECT_DEFAULT_STATS
     const project = new Project()
 
     expect(project.red).toBeGreaterThanOrEqual(min)

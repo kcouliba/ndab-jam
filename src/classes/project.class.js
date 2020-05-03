@@ -1,13 +1,9 @@
+import { PROJECT_DEFAULT_STATS } from '../constants'
 import AStats from './stats.abstract'
-
-export const DEFAULT_STATS = {
-  min: 15,
-  max: 30,
-}
 
 export default class Project extends AStats {
   constructor(options = {}) {
-    super({ ...DEFAULT_STATS, ...options })
+    super({ ...PROJECT_DEFAULT_STATS, ...options })
   }
 
   takeDamage(damage = {}) {

@@ -1,4 +1,5 @@
-import Employee, { DEFAULT_STATS } from '../src/classes/employee.class'
+import Employee from '../src/classes/employee.class'
+import { EMPLOYEE_DEFAULT_STATS } from '../src/constants'
 
 describe('Employee', () => {
   test('should be defined', () => {
@@ -6,8 +7,8 @@ describe('Employee', () => {
   })
 
   describe('stats', () => {
-    test(`should be defined between ${DEFAULT_STATS.min} and ${DEFAULT_STATS.max} by default`, () => {
-      const { min, max } = DEFAULT_STATS
+    test(`should be defined between ${EMPLOYEE_DEFAULT_STATS.min} and ${EMPLOYEE_DEFAULT_STATS.max} by default`, () => {
+      const { min, max } = EMPLOYEE_DEFAULT_STATS
       const employee = new Employee()
 
       expect(employee.red).toBeGreaterThanOrEqual(min)
