@@ -1,33 +1,38 @@
 {
-	"name": "phaser3-parcel-template",
-	"version": "1.0.0",
-	"description": "A template project for Phaser3 using Parceljs",
-	"scripts": {
-		"start": "parcel src/index.html -p 8000",
-		"build": "parcel build src/index.html --out-dir dist",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "supertommy",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ourcade/phaser3-parcel-template.git"
-	},
-	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
-	"devDependencies": {
-		"minimist": ">=1.2.2",
-		"parcel-bundler": "1.12.4",
-		"parcel-plugin-clean-easy": "^1.0.2",
-		"parcel-plugin-static-files-copy": "^2.2.1"
-	},
-	"dependencies": {
-		"phaser": "^3.22.0"
-	},
-	"parcelCleanPaths": [
-		"dist"
-	],
-	"staticFiles": {
-		"staticPath": "public",
-		"watcherGlob": "**"
-	}
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "A game jam project",
+  "scripts": {
+    "start": "parcel src/index.html -p 8000",
+    "build": "parcel build src/index.html --out-dir dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "kevin coulibaly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kcouliba/ndab-jam.git"
+  },
+  "homepage": "https://github.com/kcouliba/ndab-jam",
+  "devDependencies": {
+    "@babel/preset-env": "7.9.6",
+    "babel-jest": "25.5.1",
+    "jest": "25.5.4",
+    "minimist": ">=1.2.2",
+    "parcel-bundler": "1.12.4",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "dependencies": {
+    "@hapi/joi": "17.1.1",
+    "phaser": "^3.22.0"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ],
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
 }
