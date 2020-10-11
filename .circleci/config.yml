@@ -9,12 +9,9 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run:
-        name: Set github user and release version
-        command: |
-          git config user.email $GIT_CONFIG_USER_EMAIL
-          git config user.name $GIT_CONFIG_USER_NAME
-          npm run release
+      - run: git config user.email $GIT_CONFIG_USER_EMAIL
+      - run: git config user.name $GIT_CONFIG_USER_NAME
+      - run: npm run release
 workflows:
   node-tests:
     jobs:
