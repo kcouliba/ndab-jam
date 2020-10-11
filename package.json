@@ -38,6 +38,7 @@
     "watcherGlob": "**"
   },
   "auto": {
+    "baseBranch": "master",
     "plugins": [
       "npm"
     ]
