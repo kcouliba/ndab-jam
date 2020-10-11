@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html -p 8000",
     "build": "parcel build src/index.html --out-dir dist",
+    "release": "auto shipit",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "@hapi/joi": "17.1.1",
+    "auto": "9.57.0",
     "phaser": "^3.22.0"
   },
   "parcelCleanPaths": [
