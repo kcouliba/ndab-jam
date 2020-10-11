@@ -1,8 +1,12 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  release:
+    steps:
+      - run: npm run release
 workflows:
   node-tests:
     jobs:
       - node/test
-      - npm run release
+      - release
