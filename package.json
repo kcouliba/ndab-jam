@@ -36,5 +36,11 @@
   "staticFiles": {
     "staticPath": "public",
     "watcherGlob": "**"
+  },
+  "auto": {
+    "plugins": [
+      "npm"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
