@@ -1,5 +1,11 @@
 # v1.0.6 (Sun Oct 11 2020)
 
+
+
+---
+
+# v1.0.6 (Sun Oct 11 2020)
+
 #### 🐛 Bug Fix
 
 - Add .circleci/config.yml [#3](https://github.com/kcouliba/ndab-jam/pull/3) ([@kcouliba](https://github.com/kcouliba))
