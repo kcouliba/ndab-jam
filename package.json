@@ -1,6 +1,6 @@
 {
   "name": "pack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A game jam project",
   "scripts": {
     "start": "parcel src/index.html -p 8000",
