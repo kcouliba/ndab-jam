@@ -4,5 +4,5 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      # - node/test
-      - checkout
+      - node/test
+      - npm run release
